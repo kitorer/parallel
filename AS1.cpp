@@ -40,6 +40,7 @@ void multi_thread_sieve(ofstream &myfile)
     {
         int start = i * range;
         int end = (i + 1) * range;
+        cout<< start << " " << end << endl;
         threads.push_back(thread([=] {
             for (int j = 2; j * j <= end; j++)
             {
